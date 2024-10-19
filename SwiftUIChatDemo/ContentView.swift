@@ -22,5 +22,6 @@ struct ContentView: View {
 }
 
 #Preview {
-    ChatChannelListView()
+    
+    ChatChannelListView(viewFactory: CustomUIFactory.shared)
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CA5D91142CC4114D005F2894 /* StreamChatSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CA5D91132CC4114D005F2894 /* StreamChatSwiftUI */; };
+		CA5D91242CC43A74005F2894 /* Untitled.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D91232CC43A6A005F2894 /* Untitled.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		CA5D90E52CC410BF005F2894 /* SwiftUIChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5D90F52CC410C0005F2894 /* SwiftUIChatDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIChatDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5D90FF2CC410C0005F2894 /* SwiftUIChatDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIChatDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5D91232CC43A6A005F2894 /* Untitled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Untitled.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -84,6 +86,7 @@
 				CA5D90F82CC410C0005F2894 /* SwiftUIChatDemoTests */,
 				CA5D91022CC410C0005F2894 /* SwiftUIChatDemoUITests */,
 				CA5D90E62CC410BF005F2894 /* Products */,
+				CA5D91232CC43A6A005F2894 /* Untitled.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA5D91242CC43A74005F2894 /* Untitled.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
