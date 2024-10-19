@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A4BD245F2CC42D4700092D77 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = A4BD245E2CC42D4700092D77 /* SQLite */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A4BD24312CC4008500092D77 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BD245F2CC42D4700092D77 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = Travelapp;
 			packageProductDependencies = (
+				A4BD245E2CC42D4700092D77 /* SQLite */,
 			);
 			productName = Travelapp;
 			productReference = A4BD241F2CC4008300092D77 /* Travelapp.app */;
@@ -195,6 +201,10 @@
 			);
 			mainGroup = A4BD24162CC4008300092D77;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A4BD245C2CC42BA500092D77 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				A4BD245D2CC42BBC00092D77 /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A4BD24202CC4008300092D77 /* Products */;
 			projectDirPath = "";
@@ -583,6 +593,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4BD245C2CC42BA500092D77 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		A4BD245D2CC42BBC00092D77 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4BD245E2CC42D4700092D77 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4BD245D2CC42BBC00092D77 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A4BD24172CC4008300092D77 /* Project object */;
 }
