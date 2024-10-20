@@ -31,6 +31,7 @@
 		CA5D90E52CC410BF005F2894 /* SwiftUIChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5D90F52CC410C0005F2894 /* SwiftUIChatDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIChatDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5D90FF2CC410C0005F2894 /* SwiftUIChatDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIChatDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB941852CC575640031B033 /* UserProfileView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = UserProfileView.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -93,6 +94,13 @@
 				CA5D90E52CC410BF005F2894 /* SwiftUIChatDemo.app */,
 				CA5D90F52CC410C0005F2894 /* SwiftUIChatDemoTests.xctest */,
 				CA5D90FF2CC410C0005F2894 /* SwiftUIChatDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAB941872CC575640031B033 /* Products */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,6 +215,12 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CA5D90E62CC410BF005F2894 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CAB941872CC575640031B033 /* Products */;
+					ProjectRef = CAB941852CC575640031B033 /* UserProfileView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CA5D90E42CC410BF005F2894 /* SwiftUIChatDemo */,
@@ -405,7 +419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIChatDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = 2UYM75F9BR;
+				DEVELOPMENT_TEAM = T4XUQHHVY8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -434,7 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIChatDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = 2UYM75F9BR;
+				DEVELOPMENT_TEAM = T4XUQHHVY8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
