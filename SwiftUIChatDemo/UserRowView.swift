@@ -14,15 +14,16 @@ struct UserRowView: View {
 
     var body: some View {
         HStack {
-            Text("\(name)")
+            Text("\(name)").foregroundColor(Color.white).padding()
             Spacer()
             ForEach(hobbies, id: \.self) { hobby in
                 Text("\(hobby)")
+                    .foregroundColor(Color.white).background(Color.green).cornerRadius(5.0).padding(.all, 5.0)
             }
         }
     }
 }
 
 #Preview {
-    UserRowView(name: "Jane Doe", hobbies: ["cooking", "swimming"])
+    UserRowView(name: "Jane Doe", hobbies: ["cooking", "swimming"]).background(Color.blue)
 }

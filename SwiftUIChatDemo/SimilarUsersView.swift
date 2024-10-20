@@ -16,13 +16,16 @@ let userList = [
 
 struct SimilarUsersView: View {
     var body: some View {
-        List {
-            ForEach(userList) { user in
-                NavigationLink(destination: ChatChannelListView(viewFactory: CustomUIFactory.shared)) {
+        VStack {
+            Text("Similar Users")
+            List {
+                ForEach(userList) { user in
+                    NavigationLink(destination: ChatChannelListView(viewFactory: CustomUIFactory.shared)) {
                         UserRowView(name: user.name, hobbies: user.interests)
+                    }.listRowBackground(Color.blue)
                 }
             }
-        }
+        }.background(Color(red: 0.733, green: 0.973, blue: 0.969).edgesIgnoringSafeArea(.all))        .scrollContentBackground(.hidden)
     }
 }
 
