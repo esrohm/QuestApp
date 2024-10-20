@@ -11,17 +11,10 @@ import StreamChatSwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        ChatChannelListView(viewFactory: CustomUIFactory.shared)
     }
 }
 
 #Preview {
-    
-    ChatChannelListView(viewFactory: CustomUIFactory.shared)
+    ContentView()
 }
