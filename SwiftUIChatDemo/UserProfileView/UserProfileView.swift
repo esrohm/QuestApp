@@ -81,14 +81,7 @@ struct UserProfileView_Previews: PreviewProvider {
             UserPost(imageName: "post8"),
             UserPost(imageName: "post9")
         ]
-        NavigationLink(destination: UserProfileView(user: <#T##UserProfile#>, ) {
-            Text("Chat")
-                .foregroundColor(.black)
-                .padding()
-                .background(Color.blue)
-                .cornerRadius(5.0)
-            
-        }
+        
         return UserProfileView(user: UserProfile(username: "@jane_doe",
                                                  fullName: "Jane Doe",
                                                  bio: "Passionate about coding and coffee. Lover of tech and the great outdoors. Currently exploring the world!",
