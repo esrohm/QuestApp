@@ -17,7 +17,7 @@ struct LoginView: View {
                 Image("logo") // Ensure "logo" exists in your Assets
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 120, height: 120)
+                    .frame(width: 240, height: 240)
                     .padding(.top, 40)
 
                 // Title Text
