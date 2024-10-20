@@ -42,7 +42,7 @@ struct CustomChannelList: View {
                 channelDestination: DefaultViewFactory.shared.makeChannelDestination()
             )
             .toolbar {
-                DefaultChatChannelListHeader(title: "Stream Tutorial")
+                DefaultChatChannelListHeader(title: "")
             }
         }
     }

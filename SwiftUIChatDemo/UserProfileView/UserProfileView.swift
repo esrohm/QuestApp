@@ -66,7 +66,7 @@ struct UserProfileView: View {
                 .padding()
             }
             .navigationTitle("Profile")
-            NavigationLink(destination: CustomChannelList()) {
+            NavigationLink(destination: ChatView(user: userProfile)) {
                 Text("Message")
                     .foregroundColor(.black)
                     .padding()
@@ -92,10 +92,10 @@ struct UserProfileView_Previews: PreviewProvider {
             UserPost(imageName: "post9")
         ]
         
-        return UserProfileView(user: UserProfile(username: "@jane_doe",
-                                                 fullName: "Jane Doe",
+        return UserProfileView(user: UserProfile(username: "@ricky_roam",
+                                                 fullName: "Ricky Roam",
                                                  bio: "Passionate about coding and coffee. Lover of tech and the great outdoors. Currently exploring the world!",
-                                                 profileImage: "profilePic",
+                                                 profileImage: "ricky",
                                                  posts: samplePosts))
         
         
