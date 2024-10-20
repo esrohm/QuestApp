@@ -7,21 +7,27 @@
 
 import SwiftUI
 
+var messageCount = 0
+
 struct ChatView: View {
+
     var user: UserProfile
     @State private var newMessage = ""
-    @State private var messages: [String] = ["Hello! How are you?", "I'm doing great, thanks!"]
+    @State private var messages: [String] = ["Hello! How are you?", "I'm doing great, thanks!", "I love surfing do you have any reccomendations?", "Absolutely. Try Chuck's Surf Shop"]
 
     var body: some View {
         VStack {
             // Displaying the chat messages
             List(messages, id: \.self) { message in
+                                
                 HStack {
-                    Text(message)
-                        .padding()
-                        .background(Color.blue.opacity(0.2))
-                        .cornerRadius(10)
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                    NavigationLink(destination: vendorview()) {
+                        Text(message)
+                            .padding()
+                            .background(Color.blue.opacity(0.2))
+                            .cornerRadius(10)
+                            .frame(maxWidth: .infinity, alignment:  messageCount % 2==0 ? .trailing : .leading)
+                    }
                 }
             }
 

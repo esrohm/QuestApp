@@ -12,7 +12,7 @@ struct vendorview: View {
 
             VStack(spacing: 20) {
                 // Vendor Name at the top
-                Text("Surf Lesson Shop")
+                Text("Chuck's Surf Shop")
                     .font(.largeTitle)
                     .foregroundColor(.purple)
                     .bold()
