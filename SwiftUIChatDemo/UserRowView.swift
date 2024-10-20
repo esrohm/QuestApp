@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct UserRowView: View {
+    
+    @State var name:String
+    @State var hobbies:[String]
+
     var body: some View {
-        Text("Jane Doe")
-        Spacer()
-        Text("Cooking, Swimming")
+        HStack {
+            Text("\(name)")
+            Spacer()
+            ForEach(hobbies, id: \.self) { hobby in
+                Text("\(hobby)")
+            }
+        }
     }
 }
 
 #Preview {
-    UserRowView()
+    UserRowView(name: "Jane Doe", hobbies: ["cooking", "swimming"])
 }
