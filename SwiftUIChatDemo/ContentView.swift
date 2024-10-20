@@ -11,7 +11,13 @@ import StreamChatSwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ChatChannelListView(viewFactory: CustomUIFactory.shared)
+        NavigationView {
+            NavigationLink(destination: Text("Second View")) {
+                Text("Hello, World!")
+            }
+            .navigationTitle("Navigation")
+        }
+//            ChatChannelListView(viewFactory: CustomUIFactory.shared)
     }
 }
 
