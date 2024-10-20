@@ -17,54 +17,64 @@ struct UserProfileView: View {
     ]
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                // Profile Image
-                Image(user.profileImage)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 100, height: 100)
-                    .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.white, lineWidth: 2))
-                    .shadow(radius: 5)
-
-                // Username
-                Text(user.username)
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundColor(.primary)
-
-                // Full Name
-                Text(user.fullName)
-                    .font(.headline)
-                    .foregroundColor(.secondary)
-
-                // Bio
-                Text(user.bio)
-                    .font(.body)
-                    .foregroundColor(.gray)
-                    .lineLimit(3)
-
-                // Posts Grid
-                Text("Posts")
-                    .font(.headline)
-                    .padding(.top)
-
-                LazyVGrid(columns: gridItems, spacing: 10) {
-                    ForEach(user.posts) { post in
-                        Image(post.imageName)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 100, height: 100)
-                            .clipped() // Ensures the images don't overflow
+        VStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 16) {
+                    // Profile Image
+                    Image(user.profileImage)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 100, height: 100)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.white, lineWidth: 2))
+                        .shadow(radius: 5)
+                    
+                    // Username
+                    Text(user.username)
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.primary)
+                    
+                    // Full Name
+                    Text(user.fullName)
+                        .font(.headline)
+                        .foregroundColor(.secondary)
+                    
+                    // Bio
+                    Text(user.bio)
+                        .font(.body)
+                        .foregroundColor(.gray)
+                        .lineLimit(3)
+                    
+                    // Posts Grid
+                    Text("Posts")
+                        .font(.headline)
+                        .padding(.top)
+                    
+                    LazyVGrid(columns: gridItems, spacing: 10) {
+                        ForEach(user.posts) { post in
+                            Image(post.imageName)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 100, height: 100)
+                                .clipped() // Ensures the images don't overflow
+                        }
                     }
+                    
+                    Spacer()
                 }
-
-                Spacer()
+                .padding()
             }
-            .padding()
+            .navigationTitle("Profile")
+            NavigationLink(destination: CustomChannelList()) {
+                Text("Message")
+                    .foregroundColor(.black)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(5.0)
+            }
+            .padding([.bottom,.top], 20)
         }
-        .navigationTitle("Profile")
     }
 }
 
