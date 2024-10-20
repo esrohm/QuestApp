@@ -91,6 +91,15 @@ struct LocationSuggestionView: View {
                 }
                 .frame(height: 300)
                 .padding(.horizontal)
+                
+                NavigationLink(destination: SimilarUsersView()) {
+                    Text("Get Started")
+                        .foregroundColor(.black)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(5.0)
+                }
+                .padding(.bottom, 40)
             }
             .padding(.bottom, 40)
         }

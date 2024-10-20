@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import StreamChatSwiftUI
 
 let userList = [
     User(id: 1, name: "Linda Johnson", interests: ["Cooking", "Skiing"]),
@@ -17,7 +18,9 @@ struct SimilarUsersView: View {
     var body: some View {
         List {
             ForEach(userList) { user in
-                UserRowView(name: user.name, hobbies: user.interests)
+                NavigationLink(destination: ChatChannelListView(viewFactory: CustomUIFactory.shared)) {
+                        UserRowView(name: user.name, hobbies: user.interests)
+                }
             }
         }
     }
