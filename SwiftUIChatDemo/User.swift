@@ -9,7 +9,7 @@ import Foundation
 
 struct User: Identifiable {
     var id: Int
-
+    var profile: String
     var name: String
     var interests: [String]
 }
